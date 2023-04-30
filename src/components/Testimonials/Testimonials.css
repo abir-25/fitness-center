@@ -66,3 +66,37 @@
   width: 1rem;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+  }
+  .left-t > :nth-child(2),
+  .left-t > :nth-child(3) {
+    font-size: xx-large;
+  }
+  .left-t > :nth-child(4) {
+    text-align: left;
+    line-height: 25px;
+  }
+  .right-t {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .right-t > div {
+    position: relative;
+    display: none;
+  }
+  .right-t > img {
+    top: 0;
+    right: 0;
+    position: relative;
+  }
+  .right-t > :last-child {
+    display: block;
+    bottom: 0;
+    left: 0;
+  }
+}
