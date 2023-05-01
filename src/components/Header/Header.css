@@ -15,16 +15,43 @@
   cursor: pointer;
   color: var(--orange);
 }
-
+.headers-menu > li > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.mobile-menu {
+  background: var(--orange);
+  padding: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 25px;
+}
+.mobile-menu-list {
+  flex-direction: column;
+  background-color: var(--appColor);
+  padding: 2rem;
+  z-index: 99;
+  position: fixed;
+  left: 35px;
+  top: 60px;
+}
 @media screen and (max-width: 768px) {
+  .header {
+    height: 30px;
+    padding: 0;
+  }
   .header > :nth-child(2) {
     position: fixed;
     right: 2rem;
     z-index: 99;
   }
-  .headers-menu {
-    flex-direction: column;
-    background-color: var(--appColor);
-    padding: 2rem;
+  .logo {
+    position: fixed;
+    top: 23px;
+    z-index: 99;
+  }
+  .menu-small-device {
+    right: 32px;
+    left: 240px;
   }
 }

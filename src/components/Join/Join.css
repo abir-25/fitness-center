@@ -59,4 +59,12 @@
   .btn-j {
     width: fit-content !important;
   }
+  .left-j > hr {
+    left: 2.5rem;
+  }
+
+  .left-j > div {
+    font-size: 1.4rem !important;
+    justify-content: center;
+  }
 }

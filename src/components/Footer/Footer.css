@@ -22,8 +22,6 @@
   height: 2rem;
   cursor: pointer;
 }
-.logo-f {
-}
 .logo-f > img {
   width: 10rem;
 }
@@ -42,4 +40,10 @@
   bottom: 0;
   filter: blur(200px);
   background: rgb(255, 115, 0);
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0;
+    height: 12rem;
+  }
 }
